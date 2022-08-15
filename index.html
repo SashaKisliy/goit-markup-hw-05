@@ -35,7 +35,7 @@
          <section class="hero overlay">
             <div class="container">
             <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</br></h1>
-            <button class="hero-btn" type="button">Заказать услугу</button>
+            <button data-modal-open class="hero-btn" type="button">Заказать услугу</button>
             </div>
          </section>
         
@@ -82,9 +82,18 @@
             <div class="container">
             <h2 class="examples-title">Чем мы занимаемся</h2>
             <ul class="examples-list list">
-                <li class="examples-item"><img src="./images/img.jpg" alt="Пример работы 1" width="370"></li>
-                <li class="examples-item"><img src="./images/img2.jpg" alt="Пример работы 2" width="370"></li>
-                <li class="examples-item"><img src="./images/img22.jpg" alt="Пример работы 3" width="370"></li>
+                <li class="examples-item"><img src="./images/img.jpg" alt="Пример работы 1" width="370">
+                <div class="examples-box">
+                    <h3 class="examples-text">Декстопні додатки</h3>
+                </div></li>
+                <li class="examples-item"><img src="./images/img2.jpg" alt="Пример работы 2" width="370">
+                    <div class="examples-box">
+                        <h3 class="examples-text">Мобільні додатки</h3>
+                    </div></li></li>
+                <li class="examples-item"><img src="./images/img22.jpg" alt="Пример работы 3" width="370">
+                    <div class="examples-box">
+                        <h3 class="examples-text">Дизайнерські рішення</h3>
+                    </div></li></li>
             </ul>
             </div>
         </section>
@@ -251,5 +260,15 @@
 </footer>
 </div>
 
+<!---Modal--->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+        <svg class="close-icon"><use href="./images/symbol-defs.svg#icon-close-black" widht="18px" height="18px"></use>
+     </svg>
+</button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
